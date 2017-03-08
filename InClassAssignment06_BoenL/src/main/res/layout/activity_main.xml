@@ -12,6 +12,27 @@
     android:orientation="vertical">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/displayName"/>
+    <EditText
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter your name"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_username"
+        android:onClick="changeUsername"
+        android:text="CHANGE USERNAME" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,15 +43,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Enter Your Name Here"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             />
 
         <ImageView
             android:id="@+id/picture"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/columbia"
-            />
+            android:layout_marginLeft="40dp"/>
 
 </LinearLayout>
 
@@ -39,21 +60,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Your Age Here"
-        android:layout_margin="20dp"/>
+        android:layout_margin="10dp"/>
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Your GPA Here"
-        android:layout_margin="20dp"/>
+        android:layout_margin="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Graduate or not"
         android:textSize="20sp"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         />
 
     <RadioGroup

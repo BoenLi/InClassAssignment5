@@ -17,7 +17,7 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Intent intent=getIntent();
-        ArrayList<Student> student = (ArrayList<Student>) intent.getSerializableExtra("Student List");
+        ArrayList<Student> student = (ArrayList<Student>) intent.getSerializableExtra(MainActivity.INTENT_STUDENT_LIST);
         ScrollView displayView=(ScrollView)findViewById(R.id.displayView);
 
         for(int i=0; i<student.size();i++){
